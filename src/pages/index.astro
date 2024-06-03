@@ -1,12 +1,13 @@
 ---
+import Dbtest from '../components/dbtest.astro';
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components'
 ---
 
 <Layout title="Welcome to the mato.">
 	<main>
-		<div class="flex justify-center my-8">
-			<div class="flex justify-between w-5/6">
+		<div class="flex justify-center my-8 h-full">
+			<div class="flex justify-between w-5/6 max-w-full flex-wrap">
 				<div class="w-2/5 h-64">
 					<h1 class="text-4xl">Thiago Camelo 🐫</h1>
 					<h3 class="mt-1 font-medium">Junior Frontend Developer</h3>
@@ -21,7 +22,10 @@ import { Icon } from 'astro-icon/components'
 					</div>
 				</div>
 				<div class="border border-solid border-red-500 w-3/5">
-					<p>oi</p>
+					<Dbtest />
+				</div>
+				<div class=" mx-4 border border-black">
+					<p class="text-xl text-emerald-700">ola mundo</p>
 				</div>
 			</div>
 		</div>
